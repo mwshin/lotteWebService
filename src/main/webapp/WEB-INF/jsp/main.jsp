@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
-<title>main page</title>
+<title>main</title>
 </head>
 <body>
 <h1>웹 서비스</h1>
