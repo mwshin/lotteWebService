@@ -13,8 +13,9 @@
 
     <div class="col-md-12">
         <button id="selPost" type="button" class="btn btn-primary">조회</button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
-        <button id="delPost" type="button" class="btn btn-primary">글 삭제</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">등록</button>
+        <button id="delPost" type="button" class="btn btn-primary">수정</button>
+        <button id="delPost" type="button" class="btn btn-primary">삭제</button>
         <br/>
         <br/>
         <!-- 목록 출력 영역 -->
