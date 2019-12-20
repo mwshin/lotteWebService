@@ -10,6 +10,7 @@
 </head>
 <body>
 <h1>웹 서비스</h1>
+
     <div class="col-md-12">
         <button id="selPost" type="button" class="btn btn-primary">조회</button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
