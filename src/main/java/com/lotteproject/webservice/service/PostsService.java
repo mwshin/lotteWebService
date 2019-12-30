@@ -26,11 +26,10 @@ public class PostsService {
 	@Transactional
 	public void del(PostsSaveRequestDto dto) {
 		
-		Long id = null;
 		List<String> delList = dto.getDelList();
 		
-		for(int i=0; i < delList.size(); i++){
-			id = Long.parseLong((delList.get(i)));
+		for(String val : delList) {
+			Long id = Long.parseLong(val);
 			postsRepository.deleteById(id);
 		}
 	}

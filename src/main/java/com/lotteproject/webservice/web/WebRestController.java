@@ -1,14 +1,10 @@
 package com.lotteproject.webservice.web;
 
-import java.util.List;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lotteproject.webservice.domain.PostsRepository;
 import com.lotteproject.webservice.dto.PostsSaveRequestDto;
 import com.lotteproject.webservice.service.PostsService;
 
