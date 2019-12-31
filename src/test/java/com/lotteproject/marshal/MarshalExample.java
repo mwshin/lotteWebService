@@ -1,3 +1,4 @@
+package com.lotteproject.marshal;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 
