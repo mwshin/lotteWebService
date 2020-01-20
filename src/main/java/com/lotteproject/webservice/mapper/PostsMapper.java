@@ -10,6 +10,6 @@ import com.lotteproject.webservice.dto.PostsMainResponseDto;
 @Mapper
 public interface PostsMapper {
 
-	@Select("SELECT * FROM posts")
+	@Select("SELECT 1 FROM posts")
 	public List<PostsMainResponseDto> getPostsList() throws Exception;
 }
