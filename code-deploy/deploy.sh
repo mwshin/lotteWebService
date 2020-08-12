@@ -32,6 +32,8 @@ sudo ln -s -f ${WAR_BOX_PATH}${ORIGIN_WAR_NAME} ${TARGET_PATH}
 #echo "> ${ORIGIN_WAR_NAME} 배포"
 #nohup java -jar ${ORIGIN_WAR_NAME}
 
-ORIGIN_JAR=$(readlink /home/jenkins/lotteWebService/lotteWebService.war)
-echo "    > ORIGIN_JAR: ${ORIGIN_JAR}"
-nohup java -jar ${ORIGIN_JAR} 
+#ORIGIN_JAR=$(readlink /home/jenkins/lotteWebService/lotteWebService.war)
+#echo "    > ORIGIN_JAR: ${ORIGIN_JAR}"
+nohup java -jar /home/jenkins/lotteWebService/lotteWebService.war 
+
+
