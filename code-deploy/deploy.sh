@@ -34,7 +34,7 @@ sudo ln -s -f ${WAR_BOX_PATH}${ORIGIN_WAR_NAME} ${TARGET_PATH}
 
 #ORIGIN_JAR=$(readlink /home/jenkins/lotteWebService/lotteWebService.war)
 #echo "    > ORIGIN_JAR: ${ORIGIN_JAR}"
-sudo java -jar /home/jenkins/lotteWebService/deploy/lotteWebService-0.0.1-SNAPSHOT.war
-#nohup java -jar /home/jenkins/lotteWebService/lotteWebService.war 
+#sudo java -jar /home/jenkins/lotteWebService/deploy/lotteWebService-0.0.1-SNAPSHOT.war
+sudo nohup java -jar /home/jenkins/lotteWebService/lotteWebService.war 
 
 
