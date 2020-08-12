@@ -1,6 +1,6 @@
 ORIGIN_WAR_PATH='/home/jenkins/lotteWebService/deploy/*.war'
 ORIGIN_WAR_NAME=$(basename ${ORIGIN_WAR_PATH})
-TARGET_PATH='/home/jenkins/lotteWebService/application.war'
+TARGET_PATH='/home/jenkins/lotteWebService/lotteWebService.war'
 WAR_BOX_PATH='/home/jenkins/lotteWebService/war/'
 
 echo "  > 배포 WAR: "${ORIGIN_WAR_NAME}
@@ -16,3 +16,5 @@ sudo chown -h jenkins:jenkins ${WAR_BOX_PATH}${ORIGIN_WAR_NAME}
 
 echo "  > sudo ln -s -f ${WAR_BOX_PATH}${ORIGIN_WAR_NAME} ${TARGET_PATH}"
 sudo ln -s -f ${WAR_BOX_PATH}${ORIGIN_WAR_NAME} ${TARGET_PATH}
+
+ 
