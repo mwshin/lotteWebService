@@ -19,7 +19,7 @@ echo "  > sudo ln -s -f ${WAR_BOX_PATH}${ORIGIN_WAR_NAME} ${TARGET_PATH}"
 sudo ln -s -f ${WAR_BOX_PATH}${ORIGIN_WAR_NAME} ${TARGET_PATH}
 
 #echo "> 현재 실행중인 애플리케이션 pid 확인"
-CURRENT_PID=$(sudo pgrep -f lotteWebService*)
+CURRENT_PID=$(pgrep -f lotteWebService)
 
 if [ -z ${CURRENT_PID} ]
 then
@@ -36,5 +36,5 @@ fi
 #ORIGIN_JAR=$(readlink /home/jenkins/lotteWebService/lotteWebService.war)
 #echo "    > ORIGIN_JAR: ${ORIGIN_JAR}"
 #sudo java -jar /home/jenkins/lotteWebService/deploy/lotteWebService-0.0.1-SNAPSHOT.war
-sudo nohup java -jar ${TARGET_PATH} dev/null 2>&1 &
+sudo nohup java -jar ${TARGET_PATH} > /dev/null 2>&1 &
 
