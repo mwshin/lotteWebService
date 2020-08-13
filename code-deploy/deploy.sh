@@ -1,3 +1,4 @@
+ORIGIN_PATH = '/home/jenkins/lotteWebService'
 ORIGIN_WAR_PATH='/home/jenkins/lotteWebService/deploy/*.war'
 ORIGIN_WAR_NAME=$(basename ${ORIGIN_WAR_PATH})
 TARGET_PATH='/home/jenkins/lotteWebService/lotteWebService.war'
@@ -35,6 +36,5 @@ fi
 #ORIGIN_JAR=$(readlink /home/jenkins/lotteWebService/lotteWebService.war)
 #echo "    > ORIGIN_JAR: ${ORIGIN_JAR}"
 #sudo java -jar /home/jenkins/lotteWebService/deploy/lotteWebService-0.0.1-SNAPSHOT.war
-sudo nohup java -jar /home/jenkins/lotteWebService/lotteWebService.war &
-
+sudo nohup java -jar ${TARGET_PATH} dev/null 2>&1 &
 
